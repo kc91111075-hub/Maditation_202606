@@ -50,7 +50,9 @@
 							<div class="container hero-copy">
 								<h1 class="display-4 fw-bold">打造有溫度的學習體驗</h1>
 								<p class="lead mt-3">用清楚的架構、友善的互動與一致的品牌感受，建立讓人想停留的網站首頁。</p>
-								<a href="#about" class="btn btn-warning btn-lg mt-3 fw-semibold">了解更多</a>							<a href="#" type="button" class="btnstyle mt-4 d-inline-block" id="btnstyle">加入購物車</a>							</div>
+							<a href="#about" class="btn btn-warning btn-lg mt-3 fw-semibold">了解更多</a>
+							<a href="goal.html" type="button" class="btnstyle mt-4 d-inline-block" id="btnstyle">加入購物車</a>
+						</div>
 						</div>
 					</div>
 					<div class="carousel-item">
@@ -171,11 +173,29 @@
 					<h3 class="h5 fw-bold mb-3">公司資訊</h3>
 					<p class="mb-2">寒舍群有限公司</p>
 					<p class="mb-2">地址：台北市中山區示意路 100 號</p>
-					<p class="mb-0">電話：02-1234-5678</p>
+					<p class="mb-2">電話：02-1234-5678</p>
+					<p class="mb-0 footer-social">
+						<a href="https://www.youtube.com/watch?v=Njrgza6hs1A" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="me-2">
+								<path d="M8.051 1.999h-.002C3.474 1.99 1.005 2.026.027 2.357A1.88 1.88 0 0 0 0 3.91v8.182c0 .833.516 1.566 1.345 1.75 1.031.247 4.093.324 6.736.324 2.645 0 5.707-.077 6.737-.324A1.88 1.88 0 0 0 16 12.092V3.91a1.88 1.88 0 0 0-1.345-1.75c-1.03-.247-4.092-.324-6.737-.323z"/>
+								<path d="M6.635 5.139a.5.5 0 0 1 .765-.424l3.096 1.93a.5.5 0 0 1 0 .848l-3.096 1.93a.5.5 0 0 1-.765-.424V5.14z"/>
+							</svg>
+							<span>觀看 YouTube</span>
+						</a>
+					</p>
 				</div>
 				<div class="col-md-4">
 					<h3 class="h5 fw-bold mb-3">聯絡方式</h3>
 					<p class="mb-2">Email：service@hansegroup.com</p>
+					<p class="mb-2 footer-social">
+						<a href="https://www.youtube.com/watch?v=Njrgza6hs1A" target="_blank" rel="noopener noreferrer">
+							<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16" class="me-2">
+								<path d="M8.051 1.999h-.002C3.474 1.99 1.005 2.026.027 2.357A1.88 1.88 0 0 0 0 3.91v8.182c0 .833.516 1.566 1.345 1.75 1.031.247 4.093.324 6.736.324 2.645 0 5.707-.077 6.737-.324A1.88 1.88 0 0 0 16 12.092V3.91a1.88 1.88 0 0 0-1.345-1.75c-1.03-.247-4.092-.324-6.737-.323z"/>
+								<path d="M6.635 5.139a.5.5 0 0 1 .765-.424l3.096 1.93a.5.5 0 0 1 0 .848l-3.096 1.93a.5.5 0 0 1-.765-.424V5.14z"/>
+							</svg>
+							<span>觀看 YouTube</span>
+						</a>
+					</p>
 					<p class="mb-0">服務時間：週一至週五 09:00 - 18:00</p>
 				</div>
 			</div>
@@ -189,7 +209,7 @@
 		var abc = document.querySelector(".btnstyle");
 		if (abc) {
 			abc.addEventListener("click", function () {
-				alert("恭喜您已將商品成功地加入購物車");
+				window.location.href = "goal.html";
 			}, false);
 		}
 	</script>

@@ -104,3 +104,14 @@ a.btnstyle:hover {
 .footer-area a:hover {
 	color: var(--brand-accent);
 }
+
+.footer-social a {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+	color: #e5e7eb;
+}
+
+.footer-social a:hover {
+	color: #ff0000;
+}
