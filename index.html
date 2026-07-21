@@ -206,8 +206,20 @@
 	<script>
 		var abc = document.querySelector(".btnstyle");
 		if (abc) {
-			abc.addEventListener("click", function () {
-				window.location.href = "goal.html";
+			abc.addEventListener("click", function (event) {
+				event.preventDefault();
+				gtag('event', 'add_to_cart', {
+					currency: 'TWD',
+					value: 1,
+					items: [{
+						item_name: '寒舍群商品',
+						quantity: 1
+					}],
+					event_callback: function() {
+						window.location.href = 'goal.html';
+					},
+					event_timeout: 2000
+				});
 			}, false);
 		}
 	</script>
