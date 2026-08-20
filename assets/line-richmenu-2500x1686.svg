@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="2500" height="1686" viewBox="0 0 2500 1686">
+  <defs>
+    <style>
+      .bg{fill:#f6fff6}
+      .tile{stroke:#e3efe3;stroke-width:4}
+      .t1{fill:#eafcf0}
+      .t2{fill:#fff9ec}
+      .t3{fill:#fff0f6}
+      .t4{fill:#e8f7ff}
+      .t5{fill:#f5f0ff}
+      .t6{fill:#f8faf8}
+      .label{font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;font-weight:800;fill:#0b3b1f;font-size:64px}
+      .sub{font-family: 'Noto Sans TC', 'Microsoft JhengHei', sans-serif;fill:#35523a;font-size:36px}
+      .chatbar{fill:#12b92c}
+      .chatbar-text{fill:#fff;font-weight:800;font-size:46px;font-family:'Noto Sans TC', 'Microsoft JhengHei', sans-serif}
+    </style>
+  </defs>
+  <rect class="bg" x="0" y="0" width="2500" height="1686"/>
+
+  <!-- chat bar area at bottom (simulated) -->
+  <rect class="chatbar" x="0" y="1546" width="2500" height="140" rx="8"/>
+  <text x="20" y="1610" class="chatbar-text">點擊以開啟 (Chat bar text)</text>
+
+  <!-- Row 1 -->
+  <g id="row1">
+    <rect class="tile t1" x="0" y="0" width="833" height="843"/>
+    <text x="60" y="160" class="label">加入好友</text>
+    <text x="60" y="220" class="sub">立即聊聊</text>
+
+    <rect class="tile t2" x="833" y="0" width="834" height="843"/>
+    <text x="905" y="160" class="label">預約</text>
+    <text x="905" y="220" class="sub">快速安排</text>
+
+    <rect class="tile t3" x="1667" y="0" width="833" height="843"/>
+    <text x="1690" y="160" class="label">商城</text>
+    <text x="1690" y="220" class="sub">精選商品</text>
+  </g>
+
+  <!-- Row 2 -->
+  <g id="row2">
+    <rect class="tile t4" x="0" y="843" width="833" height="843"/>
+    <text x="60" y="1000" class="label">關於我們</text>
+    <text x="60" y="1060" class="sub">品牌故事</text>
+
+    <rect class="tile t5" x="833" y="843" width="834" height="843"/>
+    <text x="905" y="1000" class="label">常見問題</text>
+    <text x="905" y="1060" class="sub">使用說明</text>
+
+    <rect class="tile t6" x="1667" y="843" width="833" height="843"/>
+    <text x="1690" y="1000" class="label">聯絡我們</text>
+    <text x="1690" y="1060" class="sub">客服資訊</text>
+  </g>
+
+  <!-- faint guides for boundaries -->
+  <g opacity="0.12">
+    <line x1="833" y1="0" x2="833" y2="1686" stroke="#000" stroke-width="2"/>
+    <line x1="1667" y1="0" x2="1667" y2="1686" stroke="#000" stroke-width="2"/>
+    <line x1="0" y1="843" x2="2500" y2="843" stroke="#000" stroke-width="2"/>
+  </g>
+</svg>
