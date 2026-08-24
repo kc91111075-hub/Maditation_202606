@@ -242,6 +242,16 @@
 		if (abc) {
 			abc.addEventListener("click", function (event) {
 				event.preventDefault();
+				if (typeof fbq === 'function') {
+					fbq('track', 'AddToCart', {
+						content_name: '寒舍群體驗課程',
+						content_category: 'product',
+						content_ids: ['meditation-001'],
+						content_type: 'product',
+						currency: 'TWD',
+						value: 1
+					});
+				}
 				gtag('event', 'add_to_cart', {
 					currency: 'TWD',
 					value: 1,

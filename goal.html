@@ -13,6 +13,14 @@
 	'https://connect.facebook.net/en_US/fbevents.js');
 	fbq('init', '1085902844405760');
 	fbq('track', 'PageView');
+	fbq('track', 'Purchase', {
+		currency: 'TWD',
+		value: 1,
+		content_name: '寒舍群體驗課程',
+		content_category: 'product',
+		content_ids: ['meditation-001'],
+		content_type: 'product'
+	});
 	</script>
 	<noscript><img height="1" width="1" style="display:none"
 	src="https://www.facebook.com/tr?id=1085902844405760&ev=PageView&noscript=1"
