@@ -232,6 +232,20 @@
 		if (abc) {
 			abc.addEventListener("click", function (event) {
 				event.preventDefault();
+				window.dataLayer = window.dataLayer || [];
+				window.dataLayer.push({
+					event: 'add_to_cart',
+					ecommerce: {
+						currency: 'TWD',
+						value: 2990,
+						items: [{
+							item_id: 'course-001',
+							item_name: '寒舍群課程',
+							quantity: 1,
+							price: 2990
+						}]
+					}
+				});
 				window.location.href = 'goal.html';
 			}, false);
 		}
